@@ -11,8 +11,7 @@
             var inputMessage = document.getElementById("inputMessage");
             var submitButton = document.getElementById("submitButton");
 
-            submitButton.addEventListener("click", function (event) {
-                  event.preventDefault();
+            submitButton.addEventListener("click", function () {
                   console.log("Name: " + inputName.value);
                   console.log("Email: " + email.value);
                   console.log("Subject: " + subject.value);
