@@ -1,5 +1,7 @@
 "use strict";
 (function () {
+            console.log("App Started...")
+            
             // Declare Variables
             var name = document.getElementById("name");
             var email = document.getElementById("email");
