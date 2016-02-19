@@ -1,20 +1,23 @@
 "use strict";
 (function () {
-            console.log("App Started...")
+
+      if (document.getElementById("contact") != null) {
+            console.log("Contact Page");
             
             // Declare Variables
-            var name = document.getElementById("name");
+            var inputName = document.getElementById("inputName");
             var email = document.getElementById("email");
             var subject = document.getElementById("subject");
-            var message = document.getElementById("message");
+            var inputMessage = document.getElementById("inputMessage");
             var submitButton = document.getElementById("submitButton");
-            submitButton.pre
-            
-            submitButton.addEventListener("click", function(event){
-                  event.precentDefault();
-                  console.log("Name: " + name.value);
+
+            submitButton.addEventListener("click", function (event) {
+                  event.preventDefault();
+                  console.log("Name: " + inputName.value);
                   console.log("Email: " + email.value);
                   console.log("Subject: " + subject.value);
-                  console.log("Message: " + message.value);
+                  console.log("Message: " + inputMessage.value);
             });
-})();
+      }
+      
+      })();
