@@ -1,8 +1,7 @@
 "use strict";
 (function () {
 
-      if (document.getElementById("contact") != null) {
-            console.log("Contact Page");
+      console.log("App Started...");
             
             // Declare Variables
             var inputName = document.getElementById("inputName");
@@ -17,6 +16,4 @@
                   console.log("Subject: " + subject.value);
                   console.log("Message: " + inputMessage.value);
             });
-      }
-      
-      })();
+})();
